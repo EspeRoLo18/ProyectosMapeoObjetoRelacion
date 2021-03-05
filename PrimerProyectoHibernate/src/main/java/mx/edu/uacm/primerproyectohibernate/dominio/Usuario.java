@@ -6,16 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class usuario {
+public class Usuario {
 
-	@Id //La notacion id va asociada, es decir, arriba del atributo que sera el primary key en la base de datos. (estaba asociada al nombre del usuario, la cambie al id)
-	@GeneratedValue(strategy=GenerationType.IDENTITY) //Con esta notación se genera un id incremental ;)
+	@Id 
+	@GeneratedValue(strategy=GenerationType.IDENTITY) 
 	private long id;
 	
 	private String nombreUsuario;
 	private String mensajeUsuario;
 
-	public usuario() {
+	public Usuario() {
 
 	}
 	

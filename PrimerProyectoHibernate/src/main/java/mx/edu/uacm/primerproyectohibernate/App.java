@@ -10,7 +10,7 @@ import org.hibernate.cfg.Configuration;
 
 //import com.mysql.cj.xdevapi.SessionFactory;
 
-import mx.edu.uacm.primerproyectohibernate.dominio.usuario;
+import mx.edu.uacm.primerproyectohibernate.dominio.Usuario;
 
 /**
  * Hello world!
@@ -35,15 +35,15 @@ public class App
 	    	Session session = sf.openSession();
 	    	
 	    	//Creamos la entidad
-	    	usuario usr = new usuario();
+	    	Usuario usr = new Usuario();
 	    	//usr.setId(1);
 	    	usr.setNombreUsuario("paco");
 	    	
-	    	usuario usr2 = new usuario();
+	    	Usuario usr2 = new Usuario();
 	    	//usr.setId(2);
 	    	usr2.setNombreUsuario("hugo");
 	    	
-	    	usuario usr3 = new usuario();
+	    	Usuario usr3 = new Usuario();
 	    	//usr.setId(3);
 	    	usr3.setNombreUsuario("Luis");
 	    	
